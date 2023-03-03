@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { CardContainer, HomeContainer } from './styles'
+import { CardContainer } from './styles'
 import Background from '../../components/Background'
 import Navbar from '../../components/Navbar'
 import PokemonCard from '../../components/PokemonCard'
@@ -62,15 +62,19 @@ function Home() {
         <div>
             <Background />
             <Navbar />
-            {
-                isLoading ? 'Loading...' : <></>
-            }
-            {pokemonInfo && (
-                pokemonName.map((pokemon, index) =>
-                    <PokemonCard key={index} code={pokemonInfo[index]?.id} name={pokemon?.name} src={pokemonInfo[index]?.sprites?.other['official-artwork']?.front_default} color={pokemonInfo[index]?.types} />
+            <CardContainer>
+
+                {
+                    isLoading ? 'Loading...' : <></>
+                }
+                {pokemonInfo && (
+                    pokemonName.map((pokemon, index) =>
+                        <PokemonCard key={index} code={pokemonInfo[index]?.id} name={pokemon?.name} src={pokemonInfo[index]?.sprites?.other['official-artwork']?.front_default} color={pokemonInfo[index]?.types} />
+                    )
                 )
-            )
-            }
+                }
+            </CardContainer>
+
 
         </div>
     )
