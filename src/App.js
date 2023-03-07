@@ -5,12 +5,9 @@ import theme from './styles/theme';
 
 function App() {
   return (
-    <React.StrictMode>
-
-      <ThemeProvider theme={theme}>
-        <Home />
-      </ThemeProvider>
-    </React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   );
 }
 

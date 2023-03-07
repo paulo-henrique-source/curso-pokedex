@@ -19,7 +19,6 @@ function PokemonCard({ code, name, src, color, }) {
                 </CardImage>
             </Container>
         </>
-
     )
 }
 

@@ -48,7 +48,7 @@ export const CardImage = styled.div`
 export const Photo = styled.img`
   position: absolute;
   top: -25%;
-  width: 15.5rem;
+  width: 12.5rem;
   padding: 0.2rem;
   background-repeat: no-repeat;
   background-size: 15.313rem 17.813rem;
@@ -59,6 +59,6 @@ export const Photo = styled.img`
     cursor: pointer;
     filter: grayscale(0);
     top: -30%;
-    background-size: 15.313rem 19rem;
+    background-size: 15.313rem 18.813rem;
   }
 `
