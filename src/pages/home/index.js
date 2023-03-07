@@ -42,7 +42,7 @@ function Home() {
                         setPokemonInfo((prevState) =>
 
                             [...prevState, result].sort((a, b) => {
-                                return a.id - b.yaid
+                                return a.id - b.id
                             })
                         )
                     })
